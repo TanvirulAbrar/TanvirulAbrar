@@ -1,101 +1,122 @@
 <svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
+    <radialGradient id="galaxyCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff; stop-opacity:0.9"/>
+      <stop offset="30%" style="stop-color:#a0e7ff; stop-opacity:0.6"/>
+      <stop offset="70%" style="stop-color:#5b4bff; stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#1a0b4d; stop-opacity:0"/>
+    </radialGradient>
+
     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00dbde;" />
-      <stop offset="100%" style="stop-color:#fc00ff;" />
+      <stop offset="0%" style="stop-color:#00ffff;" />
+      <stop offset="100%" style="stop-color:#ff00ff;" />
     </linearGradient>
+
     <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#fceabb;" />
-      <stop offset="100%" style="stop-color:#f8b500;" />
+      <stop offset="0%" style="stop-color:#ffeb8a;" />
+      <stop offset="100%" style="stop-color:#ff9d00;" />
     </linearGradient>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#0f0c29;" />
-      <stop offset="50%" style="stop-color:#302b63;" />
-      <stop offset="100%" style="stop-color:#24243e;" />
-    </linearGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feFlood flood-color="#00ffff" flood-opacity="0.7"/>
+
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-color="#00ffff" flood-opacity="0.8"/>
       <feComposite in2="blur" operator="in"/>
       <feMerge>
         <feMergeNode/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+
+    <!-- Particle definitions for stars -->
+    <g id="starParticle">
+      <circle r="2" fill="#ffffff" opacity="0.8"/>
+      <circle r="4" fill="#a0e7ff" opacity="0.4"/>
+    </g>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="300" fill="url(#bgGrad)"/>
+  <!-- Deep space background -->
+  <rect width="1200" height="300" fill="#0d001a"/>
 
-  <!-- Subtle grid -->
-  <g opacity="0.15" stroke="#ffffff" stroke-width="1">
-    <line x1="0" y1="60" x2="1200" y2="60"/>
-    <line x1="0" y1="120" x2="1200" y2="120"/>
-    <line x1="0" y1="240" x2="1200" y2="240"/>
-    <line x1="300" y1="0" x2="300" y2="300"/>
-    <line x1="600" y1="0" x2="600" y2="300"/>
-    <line x1="900" y1="0" x2="900" y2="300"/>
-  </g>
+  <!-- Galaxy core glow -->
+  <circle cx="600" cy="150" r="150" fill="url(#galaxyCenter)" filter="url(#glow)"/>
+  <circle cx="600" cy="150" r="80" fill="#ffffff" opacity="0.2" filter="url(#glow)"/>
 
-  <!-- Central glowing code symbol -->
-  <text x="600" y="140" font-family="monospace" font-size="160" fill="url(#grad1)" text-anchor="middle" filter="url(#glow)">&lt;/&gt;</text>
+  <!-- Spiral galaxy arms (subtle) -->
+  <path d="M600,150 Q800,50 1000,100 T1200,150" fill="none" stroke="#5b4bff" stroke-width="60" opacity="0.15"/>
+  <path d="M600,150 Q400,250 200,200 T0,150" fill="none" stroke="#7b4bff" stroke-width="60" opacity="0.15"/>
+  <path d="M600,150 Q900,200 1100,100" fill="none" stroke="#a0e7ff" stroke-width="40" opacity="0.2"/>
+  <path d="M600,150 Q300,100 100,200" fill="none" stroke="#a0e7ff" stroke-width="40" opacity="0.2"/>
 
-  <!-- Git branch on the right -->
+  <!-- Scattered stars / particles -->
+  <use href="#starParticle" x="100" y="50">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite"/>
+  </use>
+  <use href="#starParticle" x="200" y="220">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="5s" repeatCount="indefinite"/>
+  </use>
+  <use href="#starParticle" x="350" y="80">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3s" repeatCount="indefinite"/>
+  </use>
+  <use href="#starParticle" x="850" y="200">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="6s" repeatCount="indefinite"/>
+  </use>
+  <use href="#starParticle" x="1050" y="70">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4.5s" repeatCount="indefinite"/>
+  </use>
+  <use href="#starParticle" x="1100" y="230">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="5.5s" repeatCount="indefinite"/>
+  </use>
+
+  <!-- Floating neon particles -->
+  <circle cx="150" cy="100" r="6" fill="#00ffff" filter="url(#glow)">
+    <animate attributeName="cy" values="100;80;100" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="150;170;150" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1050" cy="120" r="8" fill="#ff00ff" filter="url(#glow)">
+    <animate attributeName="cx" values="1050;1070;1050" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="300" cy="200" r="5" fill="#ffeb8a" filter="url(#glow)">
+    <animate attributeName="r" values="5;10;5" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Central code symbol with cosmic glow -->
+  <text x="600" y="160" font-family="monospace" font-size="140" fill="url(#grad1)" text-anchor="middle" filter="url(#glow)">&lt;/&gt;</text>
+
+  <!-- Git branch in neon -->
   <g transform="translate(950,150)" stroke="url(#grad2)" stroke-width="4" filter="url(#glow)">
     <line x1="-80" y1="0" x2="0" y2="-40"/>
     <line x1="-80" y1="0" x2="0" y2="40"/>
     <line x1="0" y1="-40" x2="50" y2="-70"/>
     <line x1="0" y1="40" x2="50" y2="70"/>
-    <circle cx="-80" cy="0" r="8" fill="#fc00ff"/>
-    <circle cx="0" cy="-40" r="8" fill="#f8b500"/>
-    <circle cx="0" cy="40" r="8" fill="#f8b500"/>
-    <circle cx="50" cy="-70" r="8" fill="#00dbde"/>
-    <circle cx="50" cy="70" r="8" fill="#00dbde"/>
+    <circle cx="-80" cy="0" r="8" fill="#ff00ff"/>
+    <circle cx="0" cy="-40" r="8" fill="#ff9d00"/>
+    <circle cx="50" cy="-70" r="8" fill="#00ffff"/>
   </g>
-
-  <!-- Hexagon on the left -->
-  <g transform="translate(250,150)">
-    <polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30" fill="none" stroke="url(#grad1)" stroke-width="4" filter="url(#glow)"/>
-  </g>
-
-  <!-- Floating particles -->
-  <circle cx="120" cy="70" r="10" fill="#00ffff" opacity="0.7">
-    <animate attributeName="cy" values="70;50;70" dur="5s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="1080" cy="90" r="12" fill="#fc00ff" opacity="0.6">
-    <animate attributeName="cx" values="1080;1100;1080" dur="6s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="180" cy="220" r="8" fill="#f8b500" opacity="0.5">
-    <animate attributeName="r" values="8;14;8" dur="4s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="1020" cy="210" r="10" fill="#00dbde" opacity="0.6">
-    <animate attributeName="cy" values="210;190;210" dur="4.5s" repeatCount="indefinite"/>
-  </circle>
 
   <!-- Title -->
-  <text x="600" y="40" font-family="Arial, sans-serif" font-size="40" fill="#ffffff" text-anchor="middle" font-weight="bold" filter="url(#glow)">
+  <text x="600" y="50" font-family="Arial, sans-serif" font-size="42" fill="#ffffff" text-anchor="middle" font-weight="bold" filter="url(#glow)">
     GitHub Stats
   </text>
 
-  <!-- Stats Boxes -->
+  <!-- Stats Cards with translucent cosmic style -->
   <g font-family="Arial, sans-serif" text-anchor="middle">
     <!-- Contributions -->
-    <rect x="150" y="80" width="300" height="140" rx="15" fill="#1a1638" opacity="0.7" stroke="url(#grad1)" stroke-width="2"/>
-    <text x="300" y="120" font-size="52" fill="url(#grad1)" font-weight="bold" filter="url(#glow)">1,842</text>
-    <text x="300" y="165" font-size="24" fill="#aaaaaa">Total Contributions</text>
-    <text x="300" y="195" font-size="20" fill="#00dbde">in the last year</text>
+    <rect x="120" y="80" width="320" height="140" rx="20" fill="#1a0b4d" opacity="0.6" stroke="url(#grad1)" stroke-width="3" filter="url(#glow)"/>
+    <text x="280" y="130" font-size="56" fill="url(#grad1)" font-weight="bold" filter="url(#glow)">1,842</text>
+    <text x="280" y="175" font-size="26" fill="#a0e7ff">Total Contributions</text>
+    <text x="280" y="205" font-size="20" fill="#00ffff">in the last year</text>
 
     <!-- Streak -->
-    <rect x="450" y="80" width="300" height="140" rx="15" fill="#1a1638" opacity="0.7" stroke="url(#grad2)" stroke-width="2"/>
-    <text x="600" y="120" font-size="52" fill="url(#grad2)" font-weight="bold" filter="url(#glow)">127</text>
-    <text x="600" y="165" font-size="24" fill="#aaaaaa">Current Streak</text>
-    <text x="600" y="195" font-size="20" fill="#f8b500">days 🔥</text>
+    <rect x="440" y="80" width="320" height="140" rx="20" fill="#1a0b4d" opacity="0.6" stroke="url(#grad2)" stroke-width="3" filter="url(#glow)"/>
+    <text x="600" y="130" font-size="56" fill="url(#grad2)" font-weight="bold" filter="url(#glow)">127</text>
+    <text x="600" y="175" font-size="26" fill="#ffeb8a">Current Streak</text>
+    <text x="600" y="205" font-size="20" fill="#ff9d00">days 🔥</text>
 
     <!-- Languages -->
-    <rect x="750" y="80" width="300" height="140" rx="15" fill="#1a1638" opacity="0.7" stroke="#00ffff" stroke-width="2"/>
-    <text x="900" y="110" font-size="28" fill="#00ffff" filter="url(#glow)">Top Languages</text>
-    <text x="900" y="145" font-size="22" fill="#fc00ff">JavaScript • 42%</text>
-    <text x="900" y="175" font-size="22" fill="#00dbde">TypeScript • 28%</text>
-    <text x="900" y="205" font-size="22" fill="#f8b500">Python • 18%</text>
+    <rect x="760" y="80" width="320" height="140" rx="20" fill="#1a0b4d" opacity="0.6" stroke="#a0e7ff" stroke-width="3" filter="url(#glow)"/>
+    <text x="920" y="115" font-size="28" fill="#a0e7ff" filter="url(#glow)">Top Languages</text>
+    <text x="920" y="150" font-size="24" fill="#ff00ff">JavaScript • 42%</text>
+    <text x="920" y="180" font-size="24" fill="#00ffff">TypeScript • 28%</text>
+    <text x="920" y="210" font-size="24" fill="#ffeb8a">Python • 18%</text>
   </g>
 </svg>
