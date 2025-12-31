@@ -1,0 +1,101 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00dbde;" />
+      <stop offset="100%" style="stop-color:#fc00ff;" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fceabb;" />
+      <stop offset="100%" style="stop-color:#f8b500;" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c29;" />
+      <stop offset="50%" style="stop-color:#302b63;" />
+      <stop offset="100%" style="stop-color:#24243e;" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#00ffff" flood-opacity="0.7"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.15" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="300" y1="0" x2="300" y2="300"/>
+    <line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="900" y1="0" x2="900" y2="300"/>
+  </g>
+
+  <!-- Central glowing code symbol -->
+  <text x="600" y="140" font-family="monospace" font-size="160" fill="url(#grad1)" text-anchor="middle" filter="url(#glow)">&lt;/&gt;</text>
+
+  <!-- Git branch on the right -->
+  <g transform="translate(950,150)" stroke="url(#grad2)" stroke-width="4" filter="url(#glow)">
+    <line x1="-80" y1="0" x2="0" y2="-40"/>
+    <line x1="-80" y1="0" x2="0" y2="40"/>
+    <line x1="0" y1="-40" x2="50" y2="-70"/>
+    <line x1="0" y1="40" x2="50" y2="70"/>
+    <circle cx="-80" cy="0" r="8" fill="#fc00ff"/>
+    <circle cx="0" cy="-40" r="8" fill="#f8b500"/>
+    <circle cx="0" cy="40" r="8" fill="#f8b500"/>
+    <circle cx="50" cy="-70" r="8" fill="#00dbde"/>
+    <circle cx="50" cy="70" r="8" fill="#00dbde"/>
+  </g>
+
+  <!-- Hexagon on the left -->
+  <g transform="translate(250,150)">
+    <polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30" fill="none" stroke="url(#grad1)" stroke-width="4" filter="url(#glow)"/>
+  </g>
+
+  <!-- Floating particles -->
+  <circle cx="120" cy="70" r="10" fill="#00ffff" opacity="0.7">
+    <animate attributeName="cy" values="70;50;70" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1080" cy="90" r="12" fill="#fc00ff" opacity="0.6">
+    <animate attributeName="cx" values="1080;1100;1080" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="180" cy="220" r="8" fill="#f8b500" opacity="0.5">
+    <animate attributeName="r" values="8;14;8" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1020" cy="210" r="10" fill="#00dbde" opacity="0.6">
+    <animate attributeName="cy" values="210;190;210" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Title -->
+  <text x="600" y="40" font-family="Arial, sans-serif" font-size="40" fill="#ffffff" text-anchor="middle" font-weight="bold" filter="url(#glow)">
+    GitHub Stats
+  </text>
+
+  <!-- Stats Boxes -->
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <!-- Contributions -->
+    <rect x="150" y="80" width="300" height="140" rx="15" fill="#1a1638" opacity="0.7" stroke="url(#grad1)" stroke-width="2"/>
+    <text x="300" y="120" font-size="52" fill="url(#grad1)" font-weight="bold" filter="url(#glow)">1,842</text>
+    <text x="300" y="165" font-size="24" fill="#aaaaaa">Total Contributions</text>
+    <text x="300" y="195" font-size="20" fill="#00dbde">in the last year</text>
+
+    <!-- Streak -->
+    <rect x="450" y="80" width="300" height="140" rx="15" fill="#1a1638" opacity="0.7" stroke="url(#grad2)" stroke-width="2"/>
+    <text x="600" y="120" font-size="52" fill="url(#grad2)" font-weight="bold" filter="url(#glow)">127</text>
+    <text x="600" y="165" font-size="24" fill="#aaaaaa">Current Streak</text>
+    <text x="600" y="195" font-size="20" fill="#f8b500">days 🔥</text>
+
+    <!-- Languages -->
+    <rect x="750" y="80" width="300" height="140" rx="15" fill="#1a1638" opacity="0.7" stroke="#00ffff" stroke-width="2"/>
+    <text x="900" y="110" font-size="28" fill="#00ffff" filter="url(#glow)">Top Languages</text>
+    <text x="900" y="145" font-size="22" fill="#fc00ff">JavaScript • 42%</text>
+    <text x="900" y="175" font-size="22" fill="#00dbde">TypeScript • 28%</text>
+    <text x="900" y="205" font-size="22" fill="#f8b500">Python • 18%</text>
+  </g>
+</svg>
