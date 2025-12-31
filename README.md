@@ -1,12 +1,10 @@
 
 ![Banner](./banner.svg)
 
-<a href="https://www.programming-hero.com/" >
-  <img src="https://i.ibb.co.com/C3NFWmhP/Frame-1.png">
-</a>
 
 
-# 👋 Hi, I'm Tanvirul Abrar <Tanvirul Abrar> 
+
+# Hi, I'm Tanvirul Abrar <Tanvirul Abrar> 
   
 🚀 Web Developer | MERN Stack | Frontend-Focused  
 🌍 Based in <bd> | Open to Remote Opportunities
@@ -16,7 +14,7 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 <img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,nodejs,express,mongodb" />
 
 **Frontend**
@@ -41,7 +39,7 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 
 ---
 
-## 📌 What I Do
+##  What I Do
 
 - Build responsive and accessible web interfaces
 - Develop RESTful APIs
@@ -52,13 +50,13 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 
 ---
 
-## 📈 Currently Activities
+##  Currently Activities
 - I am exploring Next.js
 - I’m working on a health care website.
 
 ---
 
-## 🤝 Open To
+##  Open To
 
 - Internships
 - Junior Web Developer roles
@@ -71,10 +69,13 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 Github: https://github.com/TanvirulAbrar
 Linkedin: 
 
-![Img](./git.svg)
+# GitHub Stats
 
 
 [![GitHub Streak](https://streak-stats.demolab.com/?user=TanvirulAbrar)](https://git.io/streak-stats)
 
 
 
+<a href="https://www.programming-hero.com/" >
+  <img src="https://i.ibb.co.com/C3NFWmhP/Frame-1.png">
+</a>
