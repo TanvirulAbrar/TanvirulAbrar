@@ -71,15 +71,7 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 Github: https://github.com/TanvirulAbrar
 Linkedin: 
 
-# Relevant GitHub Stats
-<!-- Total Contributions -->
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true)
-
-<!-- Most Used Languages -->
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact)
-
-<!-- Streak Stats -->
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME)
+![Img](./git.svg)
 
 
 
