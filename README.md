@@ -7,7 +7,7 @@
 
 ### 👨‍💻 Web Developer (MERN)
 
-<img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,nodejs,express,mongodb" />
+
 
 **Name:** Tanvirul Abrar  
 **Focus:** Frontend & Full-Stack  
@@ -51,10 +51,7 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 ## 🛠️ Tech Stack
 
 **Frontend**
-- HTML5, CSS3, JavaScript (ES6+)
-- React.js
-- Next.js
-- Tailwind CSS
+<img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,nodejs,express,mongodb" />
 
 **Backend**
 - Node.js
