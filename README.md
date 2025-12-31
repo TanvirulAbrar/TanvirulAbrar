@@ -4,6 +4,7 @@
 <a href="https://www.programming-hero.com/" >
   <img src="https://i.ibb.co.com/C3NFWmhP/Frame-1.png">
 </a>
+[![Programming Hero Banner](https://your-hosted-image-url.com/combined-banner.png)](https://www.programming-hero.com/)
 
 
 # 👋 Hi, I'm Tanvirul Abrar <Tanvirul Abrar> 
@@ -11,6 +12,7 @@
 🚀 Web Developer | MERN Stack | Frontend-Focused  
 🌍 Based in <bd> | Open to Remote Opportunities
 
+# About me
 I’m a passionate web developer who enjoys building modern, responsive, and user-friendly web applications. I focus on writing clean code, learning new technologies, and solving real-world problems through software.
 
 ---
@@ -51,12 +53,9 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 
 ---
 
-## 📈 Currently Learning
-
-- Advanced React Patterns
-- Performance Optimization
-- System Design Basics
-- AI integration in web apps
+## 📈 Currently Activities
+- I am exploring Next.js
+- I’m working on a health care website.
 
 ---
 
@@ -69,11 +68,19 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 
 ---
 
-## ⭐ GitHub Stats
+# Social Links
+Github: https://github.com/TanvirulAbrar
+Linkedin: 
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=<your-username>&show_icons=true&theme=default)
+# Relevant GitHub Stats
+<!-- Total Contributions -->
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true)
 
----
+<!-- Most Used Languages -->
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact)
 
-### ⚡ Fun Fact
-I enjoy learning new technologies and turning ideas into real products.
+<!-- Streak Stats -->
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME)
+
+
+
