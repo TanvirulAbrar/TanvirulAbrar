@@ -1,0 +1,23 @@
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#14002B;" />
+      <stop offset="100%" style="stop-color:#2E0058;" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00FFFF;" />
+      <stop offset="100%" style="stop-color:#00FFAA;" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="200" fill="url(#grad1)" rx="15" ry="15"/>
+  
+  <circle cx="150" cy="100" r="60" fill="none" stroke="#00FFFF" stroke-width="4" opacity="0.8"/>
+  <circle cx="150" cy="100" r="45" fill="none" stroke="#00FFAA" stroke-width="4" opacity="0.6"/>
+  
+  <text x="250" y="90" font-family="Arial, sans-serif" font-size="48" fill="white" font-weight="bold">Your GitHub Profile</text>
+  <text x="250" y="140" font-family="Arial, sans-serif" font-size="32" fill="url(#grad2)">Welcome to my repos!</text>
+  
+  <path d="M650 50 L700 100 L650 150 L750 100 Z" fill="#00FFFF" opacity="0.7"/>
+  
+</svg>
