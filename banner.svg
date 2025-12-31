@@ -1,23 +1,63 @@
-<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#14002B;" />
-      <stop offset="100%" style="stop-color:#2E0058;" />
-    </linearGradient>
     <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#00FFFF;" />
       <stop offset="100%" style="stop-color:#00FFAA;" />
     </linearGradient>
+    
+    <!-- Subtle overlay for better text readability on bright background -->
+    <filter id="darken">
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5"/>
+      </feComponentTransfer>
+    </filter>
   </defs>
   
-  <rect width="800" height="200" fill="url(#grad1)" rx="15" ry="15"/>
+  <!-- Background image -->
+  <image xlink:href="https://i.ibb.co.com/VWfqb4Gt/conny-schneider-xu-TJZ7u-D7-PI-unsplash.jpg" 
+         x="0" y="0" width="1200" height="300" preserveAspectRatio="xMidYMid slice"/>
   
-  <circle cx="150" cy="100" r="60" fill="none" stroke="#00FFFF" stroke-width="4" opacity="0.8"/>
-  <circle cx="150" cy="100" r="45" fill="none" stroke="#00FFAA" stroke-width="4" opacity="0.6"/>
+  <!-- Optional subtle darken overlay for text contrast -->
+  <rect width="1200" height="300" fill="black" opacity="0.3" filter="url(#darken)"/>
   
-  <text x="250" y="90" font-family="Arial, sans-serif" font-size="48" fill="white" font-weight="bold">Your GitHub Profile</text>
-  <text x="250" y="140" font-family="Arial, sans-serif" font-size="32" fill="url(#grad2)">Welcome to my repos!</text>
+  <!-- Falling particles (animated snow/dust) -->
+  <circle cx="100" cy="-20" r="3" fill="white" opacity="0.8">
+    <animate attributeName="cy" values="-20;320" dur="15s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="200" cy="-20" r="4" fill="white" opacity="0.6">
+    <animate attributeName="cy" values="-20;320" dur="18s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="-20" r="2" fill="white" opacity="0.9">
+    <animate attributeName="cy" values="-20;320" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="500" cy="-20" r="5" fill="white" opacity="0.5">
+    <animate attributeName="cy" values="-20;320" dur="20s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="650" cy="-20" r="3" fill="white" opacity="0.7">
+    <animate attributeName="cy" values="-20;320" dur="14s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="800" cy="-20" r="4" fill="white" opacity="0.8">
+    <animate attributeName="cy" values="-20;320" dur="16s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="950" cy="-20" r="2" fill="white" opacity="0.6">
+    <animate attributeName="cy" values="-20;320" dur="19s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1100" cy="-20" r="3" fill="white" opacity="0.7">
+    <animate attributeName="cy" values="-20;320" dur="13s" repeatCount="indefinite"/>
+  </circle>
   
-  <path d="M650 50 L700 100 L650 150 L750 100 Z" fill="#00FFFF" opacity="0.7"/>
+  <!-- A few static sparkles -->
+  <circle cx="150" cy="80" r="4" fill="white" opacity="0.9"/>
+  <circle cx="180" cy="100" r="2" fill="white" opacity="0.8"/>
+  <circle cx="700" cy="120" r="3" fill="white" opacity="0.7"/>
+  <circle cx="900" cy="60" r="5" fill="white" opacity="0.6"/>
   
+  <!-- Text content -->
+  <text x="600" y="120" font-family="Arial, sans-serif" font-size="60" fill="white" font-weight="bold" text-anchor="middle">Your GitHub Profile</text>
+  <text x="600" y="190" font-family="Arial, sans-serif" font-size="40" fill="url(#grad2)" text-anchor="middle">Welcome to my repos!</text>
+  
+  <!-- Decorative shapes from original -->
+  <circle cx="150" cy="150" r="60" fill="none" stroke="#00FFFF" stroke-width="4" opacity="0.8"/>
+  <circle cx="150" cy="150" r="45" fill="none" stroke="#00FFAA" stroke-width="4" opacity="0.6"/>
+  <path d="M1000 80 L1050 130 L1000 180 L1100 130 Z" fill="#00FFFF" opacity="0.7"/>
 </svg>
