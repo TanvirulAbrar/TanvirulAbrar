@@ -37,7 +37,7 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 - HTML5, CSS3, JavaScript (ES6+)
 - React.js
 - Next.js
-- Tailwind CSS / Bootstrap
+- Tailwind CSS
 
 **Backend**
 - Node.js
@@ -45,12 +45,11 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 
 **Database**
 - MongoDB
-- Mongoose
+
 
 **Tools & Platforms**
 - Git & GitHub
 - VS Code
-- Postman
 - Vercel / Netlify
 - Firebase
 
