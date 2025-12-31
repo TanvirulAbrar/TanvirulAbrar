@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Tanvirul Abrar <Tanvirul Abrar> 
 
-
+<img src="https://unsplash.com/photos/a-hand-holding-a-glass-of-water-w3RxPn7C_vg">
 
 
 🚀 Web Developer | MERN Stack | Frontend-Focused  
@@ -46,26 +46,6 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 
 ---
 
-## 📂 Projects
-
-Here are some of my highlighted projects:
-
-### 🔹 <Project Name>
-- Description: <Short description of the project>
-- Tech: React, Node.js, MongoDB
-- Live: <Live URL>
-- Repo: <GitHub Repo URL>
-
-### 🔹 <Project Name>
-- Description: <Short description>
-- Tech: Next.js, Tailwind CSS
-- Live: <Live URL>
-- Repo: <GitHub Repo URL>
-
-> Check out my repositories for more projects.
-
----
-
 ## 📈 Currently Learning
 
 - Advanced React Patterns
@@ -81,15 +61,6 @@ Here are some of my highlighted projects:
 - Junior Web Developer roles
 - Freelance projects
 - Remote opportunities
-
----
-
-## 📫 Contact Me
-
-- Email: <your-email@example.com>
-- LinkedIn: <LinkedIn Profile URL>
-- GitHub: https://github.com/<your-username>
-- Portfolio: <Portfolio URL (if any)>
 
 ---
 
