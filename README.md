@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Tanvirul Abrar <Tanvirul Abrar> 
 
-<div align="center">
+<div align="center" style="border-radius:12px">
 
 <table>
 <tr>
