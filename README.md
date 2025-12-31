@@ -66,8 +66,8 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 ---
 
 # Social Links
-Github: https://github.com/TanvirulAbrar
-Linkedin: 
+[![GitHub](https://img.shields.io/badge/-GitHub-61DAFB?style=flat-square&logo=github&logoColor=white)](https://github.com/TanvirulAbrar)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-61DAFB?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tanvirul-abrar)
 
 # GitHub Stats
 
