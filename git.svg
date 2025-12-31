@@ -104,20 +104,8 @@
     </rect>
     <text x="470" y="80" font-size="24" fill="#00ffff" text-anchor="end">42%</text>
     
-    <!-- TypeScript -->
-    <text x="70" y="115" font-size="26" fill="#00ffff" text-anchor="start">TypeScript</text>
-    <rect x="220" y="103" width="240" height="18" rx="9" fill="#0f0a2e" opacity="0.8"/>
-    <rect x="220" y="103" width="134" height="18" rx="9" fill="url(#blueProgress)">
-      <animate attributeName="width" values="0;134" dur="2.2s" fill="freeze"/>
-    </rect>
-    <text x="470" y="115" font-size="24" fill="#00ffff" text-anchor="end">28%</text>
     
-    <!-- Python -->
-    <text x="70" y="150" font-size="26" fill="#00ffff" text-anchor="start">Python</text>
-    <rect x="220" y="138" width="240" height="18" rx="9" fill="#0f0a2e" opacity="0.8"/>
-    <rect x="220" y="138" width="86" height="18" rx="9" fill="url(#blueProgress)">
-      <animate attributeName="width" values="0;86" dur="2.4s" fill="freeze"/>
-    </rect>
-    <text x="470" y="150" font-size="24" fill="#00ffff" text-anchor="end">18%</text>
+    
+   
   </g>
 </svg>
