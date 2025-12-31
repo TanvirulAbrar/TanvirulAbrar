@@ -1,4 +1,21 @@
 # 👋 Hi, I'm Tanvirul Abrar <Tanvirul Abrar> 
+## 💳 Tech Card
+
+<table align="center">
+<tr>
+<td>
+
+### 👨‍💻 Web Developer (MERN)
+
+<img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,nodejs,express,mongodb" />
+
+**Name:** Tanvirul Abrar  
+**Focus:** Frontend & Full-Stack  
+**Status:** Actively Learning  
+
+</td>
+</tr>
+</table>
 
 <div align="center" style="border-radius:12px">
 
