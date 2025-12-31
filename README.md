@@ -1,5 +1,29 @@
 # 👋 Hi, I'm <Tanvirul Abrar>
 
+div align="center">
+
+<table>
+<tr>
+<td width="420" style="border-radius:12px; border:1px solid #e1e4e8; padding:16px;">
+
+<b>WEB DEVELOPER</b>  
+<small>MERN Stack</small>
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,nodejs,express,mongodb" />
+
+<br><br>
+
+<b>Name:</b> Tanvirul Abrar  
+<b>Status:</b> Actively Learning  
+<b>Focus:</b> Frontend & Full Stack
+
+</td>
+</tr>
+</table>
+
+</div>
 🚀 Web Developer | MERN Stack | Frontend-Focused  
 🌍 Based in <bd> | Open to Remote Opportunities
 
