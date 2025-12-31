@@ -1,35 +1,43 @@
-<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="700" viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="galaxyCenter" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" style="stop-color:#ffffff; stop-opacity:0.9"/>
-      <stop offset="30%" style="stop-color:#a0e7ff; stop-opacity:0.6"/>
-      <stop offset="70%" style="stop-color:#5b4bff; stop-opacity:0.3"/>
-      <stop offset="100%" style="stop-color:#1a0b4d; stop-opacity:0"/>
+    <!-- Soft cosmic background gradient -->
+    <radialGradient id="cosmicBg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" style="stop-color:#1e0b4d;"/>
+      <stop offset="40%" style="stop-color:#0f0a2e;"/>
+      <stop offset="100%" style="stop-color:#000000;"/>
     </radialGradient>
 
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00ffff;" />
-      <stop offset="100%" style="stop-color:#ff00ff;" />
+    <!-- Neon gradients -->
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ffff;"/>
+      <stop offset="100%" style="stop-color:#00b7eb;"/>
     </linearGradient>
 
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#ffeb8a;" />
-      <stop offset="100%" style="stop-color:#ff9d00;" />
+    <linearGradient id="neonMagenta" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff00ff;"/>
+      <stop offset="100%" style="stop-color:#c800ff;"/>
     </linearGradient>
 
-    <linearGradient id="progressFill1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00ffff;" />
-      <stop offset="100%" style="stop-color:#00b7eb;" />
+    <linearGradient id="neonGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffeb8a;"/>
+      <stop offset="100%" style="stop-color:#ff9d00;"/>
     </linearGradient>
 
-    <linearGradient id="progressFill2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#ffeb8a;" />
-      <stop offset="100%" style="stop-color:#ff9d00;" />
-    </linearGradient>
-
+    <!-- Glow filter -->
     <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
       <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feFlood flood-color="#00ffff" flood-opacity="0.8"/>
+      <feFlood flood-color="#00ffff" flood-opacity="0.7"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Soft inner glow for cards -->
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#ffffff" flood-opacity="0.15"/>
       <feComposite in2="blur" operator="in"/>
       <feMerge>
         <feMergeNode/>
@@ -38,109 +46,86 @@
     </filter>
   </defs>
 
-  <!-- Deep space background -->
-  <rect width="1200" height="300" fill="#0d001a"/>
+  <!-- Background -->
+  <rect width="600" height="700" fill="url(#cosmicBg)"/>
 
-  <!-- Galaxy core -->
-  <circle cx="600" cy="150" r="150" fill="url(#galaxyCenter)" filter="url(#glow)"/>
-  <circle cx="600" cy="150" r="80" fill="#ffffff" opacity="0.2" filter="url(#glow)"/>
-
-  <!-- Subtle spiral arms -->
-  <path d="M600,150 Q800,50 1000,100 T1200,150" fill="none" stroke="#5b4bff" stroke-width="60" opacity="0.15"/>
-  <path d="M600,150 Q400,250 200,200 T0,150" fill="none" stroke="#7b4bff" stroke-width="60" opacity="0.15"/>
-
-  <!-- Twinkling stars -->
-  <circle cx="150" cy="80" r="3" fill="#ffffff" opacity="0.8">
-    <animate attributeName="opacity" values="0.4;1;0.4" dur="4s" repeatCount="indefinite"/>
+  <!-- Subtle floating stars -->
+  <circle cx="100" cy="100" r="3" fill="#ffffff" opacity="0.8">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="5s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="300" cy="220" r="2.5" fill="#a0e7ff" opacity="0.7">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="5s" repeatCount="indefinite"/>
+  <circle cx="500" cy="150" r="2" fill="#a0e7ff" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="900" cy="100" r="3" fill="#ffffff" opacity="0.9">
-    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="3.5s" repeatCount="indefinite"/>
+  <circle cx="300" cy="600" r="3" fill="#ffeb8a" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="6s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="1050" cy="200" r="2" fill="#ffeb8a" opacity="0.6">
-    <animate attributeName="opacity" values="0.6;1;0.6" dur="6s" repeatCount="indefinite"/>
+  <circle cx="450" cy="500" r="2.5" fill="#ffffff" opacity="0.9">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3.5s" repeatCount="indefinite"/>
   </circle>
-
-  <!-- Floating neon particles -->
-  <circle cx="200" cy="120" r="7" fill="#00ffff" filter="url(#glow)">
-    <animate attributeName="cy" values="120;100;120" dur="6s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="1000" cy="150" r="9" fill="#ff00ff" filter="url(#glow)">
-    <animate attributeName="cx" values="1000;1020;1000" dur="7s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- Central code symbol -->
-  <text x="600" y="160" font-family="monospace" font-size="140" fill="url(#grad1)" text-anchor="middle" filter="url(#glow)">&lt;/&gt;</text>
 
   <!-- Title -->
-  <text x="600" y="50" font-family="Arial, sans-serif" font-size="42" fill="#ffffff" text-anchor="middle" font-weight="bold" filter="url(#glow)">
+  <text x="300" y="80" font-family="Arial, sans-serif" font-size="48" fill="#ffffff" text-anchor="middle" font-weight="bold" filter="url(#glow)">
     GitHub Stats
   </text>
 
-  <!-- Stats Cards with Progress Bars -->
-  <g font-family="Arial, sans-serif" text-anchor="middle">
-    <!-- Total Contributions with Progress Bar -->
-    <g transform="translate(120,80)">
-      <rect width="320" height="140" rx="20" fill="#1a0b4d" opacity="0.6" stroke="url(#grad1)" stroke-width="3" filter="url(#glow)"/>
-      <text x="160" y="35" font-size="28" fill="#a0e7ff" filter="url(#glow)">Total Contributions</text>
-      <text x="160" y="70" font-size="48" fill="url(#grad1)" font-weight="bold" filter="url(#glow)">1,842</text>
-      <text x="160" y="95" font-size="18" fill="#aaaaaa">Goal: 2,000</text>
-      
-      <!-- Progress Bar Background -->
-      <rect x="40" y="105" width="240" height="20" rx="10" fill="#0f0a2e" opacity="0.8"/>
-      <!-- Progress Fill (92.1%) -->
-      <rect x="40" y="105" width="221" height="20" rx="10" fill="url(#progressFill1)">
-        <animate attributeName="width" values="0;221" dur="2s" fill="freeze"/>
-      </rect>
-      <text x="160" y="140" font-size="18" fill="#00ffff" filter="url(#glow)">92% Complete</text>
-    </g>
+  <!-- Central subtle code symbol -->
+  <text x="300" y="180" font-family="monospace" font-size="120" fill="url(#neonCyan)" text-anchor="middle" opacity="0.6" filter="url(#glow)">&lt;/&gt;</text>
 
-    <!-- Current Streak with Progress Bar -->
-    <g transform="translate(440,80)">
-      <rect width="320" height="140" rx="20" fill="#1a0b4d" opacity="0.6" stroke="url(#grad2)" stroke-width="3" filter="url(#glow)"/>
-      <text x="160" y="35" font-size="28" fill="#ffeb8a" filter="url(#glow)">Current Streak</text>
-      <text x="160" y="70" font-size="48" fill="url(#grad2)" font-weight="bold" filter="url(#glow)">127</text>
-      <text x="160" y="95" font-size="18" fill="#aaaaaa">Goal: 365 days</text>
-      
-      <!-- Progress Bar Background -->
-      <rect x="40" y="105" width="240" height="20" rx="10" fill="#0f0a2e" opacity="0.8"/>
-      <!-- Progress Fill (34.8%) -->
-      <rect x="40" y="105" width="83.5" height="20" rx="10" fill="url(#progressFill2)">
-        <animate attributeName="width" values="0;83.5" dur="2s" fill="freeze"/>
-      </rect>
-      <text x="160" y="140" font-size="18" fill="#ff9d00" filter="url(#glow)">35% to Yearly Goal</text>
-    </g>
+  <!-- Card 1: Total Contributions -->
+  <g transform="translate(50,220)">
+    <rect width="500" height="140" rx="25" fill="#150d38" opacity="0.7" stroke="url(#neonCyan)" stroke-width="3" filter="url(#softGlow)"/>
+    <text x="250" y="45" font-size="32" fill="#a0e7ff" text-anchor="middle" filter="url(#glow)">Total Contributions</text>
+    <text x="250" y="95" font-size="60" fill="url(#neonCyan)" text-anchor="middle" font-weight="bold" filter="url(#glow)">1,842</text>
+    
+    <!-- Progress Bar -->
+    <text x="250" y="125" font-size="20" fill="#aaaaaa" text-anchor="middle">Goal: 2,000 (92%)</text>
+    <rect x="100" y="135" width="300" height="18" rx="9" fill="#0f0a2e" opacity="0.8"/>
+    <rect x="100" y="135" width="276" height="18" rx="9" fill="url(#neonCyan)">
+      <animate attributeName="width" values="0;276" dur="2.5s" fill="freeze"/>
+    </rect>
+  </g>
 
-    <!-- Top Languages with Mini Progress Bars -->
-    <g transform="translate(760,80)">
-      <rect width="320" height="140" rx="20" fill="#1a0b4d" opacity="0.6" stroke="#a0e7ff" stroke-width="3" filter="url(#glow)"/>
-      <text x="160" y="25" font-size="28" fill="#a0e7ff" filter="url(#glow)">Top Languages</text>
-      
-      <!-- JavaScript -->
-      <text x="40" y="55" font-size="22" fill="#ff00ff" text-anchor="start">JavaScript</text>
-      <rect x="140" y="45" width="140" height="14" rx="7" fill="#0f0a2e" opacity="0.8"/>
-      <rect x="140" y="45" width="117" height="14" rx="7" fill="#ff00ff">
-        <animate attributeName="width" values="0;117" dur="1.8s" fill="freeze"/>
-      </rect>
-      <text x="290" y="55" font-size="20" fill="#ff00ff" text-anchor="end">42%</text>
-      
-      <!-- TypeScript -->
-      <text x="40" y="85" font-size="22" fill="#00ffff" text-anchor="start">TypeScript</text>
-      <rect x="140" y="75" width="140" height="14" rx="7" fill="#0f0a2e" opacity="0.8"/>
-      <rect x="140" y="75" width="78" height="14" rx="7" fill="#00ffff">
-        <animate attributeName="width" values="0;78" dur="2s" fill="freeze"/>
-      </rect>
-      <text x="290" y="85" font-size="20" fill="#00ffff" text-anchor="end">28%</text>
-      
-      <!-- Python -->
-      <text x="40" y="115" font-size="22" fill="#ffeb8a" text-anchor="start">Python</text>
-      <rect x="140" y="105" width="140" height="14" rx="7" fill="#0f0a2e" opacity="0.8"/>
-      <rect x="140" y="105" width="50" height="14" rx="7" fill="#ffeb8a">
-        <animate attributeName="width" values="0;50" dur="2.2s" fill="freeze"/>
-      </rect>
-      <text x="290" y="115" font-size="20" fill="#ffeb8a" text-anchor="end">18%</text>
-    </g>
+  <!-- Card 2: Current Streak -->
+  <g transform="translate(50,380)">
+    <rect width="500" height="140" rx="25" fill="#150d38" opacity="0.7" stroke="url(#neonGold)" stroke-width="3" filter="url(#softGlow)"/>
+    <text x="250" y="45" font-size="32" fill="#ffeb8a" text-anchor="middle" filter="url(#glow)">Current Streak</text>
+    <text x="250" y="95" font-size="60" fill="url(#neonGold)" text-anchor="middle" font-weight="bold" filter="url(#glow)">127</text>
+    
+    <!-- Progress Bar -->
+    <text x="250" y="125" font-size="20" fill="#aaaaaa" text-anchor="middle">Toward 365 days (35%)</text>
+    <rect x="100" y="135" width="300" height="18" rx="9" fill="#0f0a2e" opacity="0.8"/>
+    <rect x="100" y="135" width="105" height="18" rx="9" fill="url(#neonGold)">
+      <animate attributeName="width" values="0;105" dur="2.5s" fill="freeze"/>
+    </rect>
+  </g>
+
+  <!-- Card 3: Top Languages -->
+  <g transform="translate(50,540)">
+    <rect width="500" height="140" rx="25" fill="#150d38" opacity="0.7" stroke="url(#neonMagenta)" stroke-width="3" filter="url(#softGlow)"/>
+    <text x="250" y="40" font-size="32" fill="#ff00ff" text-anchor="middle" filter="url(#glow)">Top Languages</text>
+    
+    <!-- JavaScript -->
+    <text x="50" y="75" font-size="26" fill="#ff00ff" text-anchor="start">JavaScript</text>
+    <rect x="200" y="65" width="200" height="16" rx="8" fill="#0f0a2e" opacity="0.8"/>
+    <rect x="200" y="65" width="168" height="16" rx="8" fill="url(#neonMagenta)">
+      <animate attributeName="width" values="0;168" dur="2s" fill="freeze"/>
+    </rect>
+    <text x="410" y="75" font-size="24" fill="#ff00ff" text-anchor="end">42%</text>
+    
+    <!-- TypeScript -->
+    <text x="50" y="105" font-size="26" fill="#00ffff" text-anchor="start">TypeScript</text>
+    <rect x="200" y="95" width="200" height="16" rx="8" fill="#0f0a2e" opacity="0.8"/>
+    <rect x="200" y="95" width="112" height="16" rx="8" fill="url(#neonCyan)">
+      <animate attributeName="width" values="0;112" dur="2.2s" fill="freeze"/>
+    </rect>
+    <text x="410" y="105" font-size="24" fill="#00ffff" text-anchor="end">28%</text>
+    
+    <!-- Python -->
+    <text x="50" y="135" font-size="26" fill="#ffeb8a" text-anchor="start">Python</text>
+    <rect x="200" y="125" width="200" height="16" rx="8" fill="#0f0a2e" opacity="0.8"/>
+    <rect x="200" y="125" width="72" height="16" rx="8" fill="url(#neonGold)">
+      <animate attributeName="width" values="0;72" dur="2.4s" fill="freeze"/>
+    </rect>
+    <text x="410" y="135" font-size="24" fill="#ffeb8a" text-anchor="end">18%</text>
   </g>
 </svg>
