@@ -14,7 +14,10 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 <img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,nodejs,express,mongodb" />
 
 **Frontend**
-
+- HTML5, CSS3, JavaScript (ES6+)
+- React.js
+- Next.js
+- Tailwind CSS 
 
 **Backend**
 - Node.js
