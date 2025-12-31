@@ -1,5 +1,14 @@
 # 👋 Hi, I'm Tanvirul Abrar <Tanvirul Abrar> 
 
+## 📊 Daily.dev Overview
+
+<a href="https://app.daily.dev/YOUR_USERNAME">
+  <img
+    src="https://api.daily.dev/devcards/v2/CARD_ID.png?type=wide"
+    width="600"
+    alt="Daily.dev overview card"
+  />
+</a>
 
 
 🚀 Web Developer | MERN Stack | Frontend-Focused  
