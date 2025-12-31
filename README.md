@@ -1,5 +1,5 @@
 # 👋 Hi, I'm Tanvirul Abrar <Tanvirul Abrar> 
-## 💳 Tech Card
+
 
 <table align="center">
 <tr>
