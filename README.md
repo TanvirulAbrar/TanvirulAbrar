@@ -6,7 +6,7 @@
 
 # Hi, I'm Tanvirul Abrar <Tanvirul Abrar> 
   
-🚀 Web Developer | MERN Stack | Frontend-Focused  
+🚀 Web Developer | MERN Stack | Frontend-Focused | I’m a passionate web developer who enjoys building modern, responsive, and user-friendly web applications. 
 🌍 Based in <bd> | Open to Remote Opportunities
 
 # About me
