@@ -40,8 +40,7 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 ---
 
 ##  Currently Activities
-- I am exploring Next.js
-- I’m working on a health care website.
+- I’m working on a real estate websites.
 
 ---
 
@@ -65,6 +64,6 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 
 
 
-<a href="https://www.programming-hero.com/" >
+<a href="https://portfolio-tanvirul-abrar.netlify.app/" >
   <img src="https://i.ibb.co.com/C3NFWmhP/Frame-1.png">
 </a>
