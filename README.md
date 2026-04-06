@@ -2,7 +2,13 @@
 ![Banner](./banner.svg)
 
 
+## 🧑‍💻 About Me <img src="https://media1.giphy.com/media/TJP7EH5i1fB2rKeWbf/giphy.webp" width="25">
 
+## 🧰 Tech Stack <img src="https://media1.giphy.com/media/TJP7EH5i1fB2rKeWbf/giphy.webp" width="25">
+
+## 📊 GitHub Stats <img src="https://media1.giphy.com/media/TJP7EH5i1fB2rKeWbf/giphy.webp" width="25">
+
+## 🔥 Projects <img src="https://media1.giphy.com/media/TJP7EH5i1fB2rKeWbf/giphy.webp" width="25">
 
 # Hi, I'm Tanvirul Abrar <Tanvirul Abrar> 
   
