@@ -83,4 +83,16 @@
    <text x="600" y="260" font-family="Arial, sans-serif" font-size="24" fill="#aaaaaa" text-anchor="middle" opacity="0.9">
     Contact number: +8801952866605
   </text>
+   <a href="https://portfolio-tanvirul-abrar.netlify.app/" target="_blank">
+    <image 
+      href="https://i.ibb.co.com/C3NFWmhP/Frame-1.png"
+      x="500" 
+      y="90" 
+      width="200" 
+      height="120"
+      preserveAspectRatio="xMidYMid meet"
+      filter="url(#glow)"
+      opacity="0.95"
+    />
+  </a>
 </svg>
