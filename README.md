@@ -53,7 +53,7 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 
 ---
 
-# Social Links
+# <img src="https://media2.giphy.com/media/65qzUZckzeWG1wugLW/giphy.webp" width="35"> Social Links
 [![GitHub](https://img.shields.io/badge/-GitHub-61DAFB?style=flat-square&logo=github&logoColor=white)](https://github.com/TanvirulAbrar)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-61DAFB?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tanvirul-abrar)
 
