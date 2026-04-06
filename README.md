@@ -1,5 +1,8 @@
 
 ![Banner](./banner.svg)
+
+[![Portfolio](https://raw.githubusercontent.com/TanvirulAbrar/TanvirulAbrar/main/card.png)](https://portfolio-tanvirul-abrar.netlify.app/)
+
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=tanvirul-abrar&label=Profile%20Views&color=00aaff&style=flat-square" />
 </p>
