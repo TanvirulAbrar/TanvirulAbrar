@@ -9,7 +9,7 @@
   
 Web Developer | MERN Stack | Full-stack devloper | Problem solver
 
-# About me
+# <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExazRrZnV4YmhpYmxoamVuZG16eDlndTI4YmNrdzVtNXc1ejhoeDVhYSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/juua9i2c2fA0AIp2iq/giphy.gif" width ="35"> About me
 I’m a passionate web developer who enjoys building modern, responsive, and user-friendly web applications. I focus on writing clean code, learning new technologies, and solving real-world problems through software.
 
 ---
