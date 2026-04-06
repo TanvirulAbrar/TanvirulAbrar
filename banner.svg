@@ -84,6 +84,12 @@
     Contact number: +8801952866605
   </text>
    <a href="https://portfolio-tanvirul-abrar.netlify.app/" target="_blank">
-  <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/C3NFWmhP/Frame-1.png" alt="Frame-1" border="0" /></a>
+ <image 
+  href="https://raw.githubusercontent.com/TanvirulAbrar/TanvirulAbrar/card.png"
+  x="500"
+  y="90"
+  width="200"
+  height="120"
+/>
   </a>
 </svg>
