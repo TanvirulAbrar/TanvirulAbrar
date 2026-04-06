@@ -2,13 +2,6 @@
 ![Banner](./banner.svg)
 
 
-## 🧑‍💻 About Me <img src="https://media1.giphy.com/media/TJP7EH5i1fB2rKeWbf/giphy.webp" width="25">
-
-## 🧰 Tech Stack <img src="https://media1.giphy.com/media/TJP7EH5i1fB2rKeWbf/giphy.webp" width="25">
-
-## 📊 GitHub Stats <img src="https://media1.giphy.com/media/TJP7EH5i1fB2rKeWbf/giphy.webp" width="25">
-
-## 🔥 Projects <img src="https://media1.giphy.com/media/TJP7EH5i1fB2rKeWbf/giphy.webp" width="25">
 
 # Hi, I'm Tanvirul Abrar <Tanvirul Abrar> 
   
@@ -63,7 +56,7 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 [![GitHub](https://img.shields.io/badge/-GitHub-61DAFB?style=flat-square&logo=github&logoColor=white)](https://github.com/TanvirulAbrar)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-61DAFB?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tanvirul-abrar)
 
-# GitHub Stats
+# <img src="https://media1.giphy.com/media/TJP7EH5i1fB2rKeWbf/giphy.webp" width="30"> GitHub Stats
 
 
 [![GitHub Streak](https://streak-stats.demolab.com/?user=TanvirulAbrar)](https://git.io/streak-stats)
