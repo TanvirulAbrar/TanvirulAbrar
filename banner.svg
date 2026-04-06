@@ -84,15 +84,15 @@
     Contact number: +8801952866605
   </text>
    <a href="https://portfolio-tanvirul-abrar.netlify.app/" target="_blank">
-    <image 
-      href="https://i.ibb.co/C3NFWmhP/Frame-1.png"
-      x="500" 
-      y="90" 
-      width="200" 
-      height="120"
-      preserveAspectRatio="xMidYMid meet"
-      filter="url(#glow)"
-      opacity="0.95"
-    />
+   <image 
+  href="https://i.ibb.co/C3NFWmhP/Frame-1.png"
+  xlink:href="https://i.ibb.co/C3NFWmhP/Frame-1.png"
+  x="500"
+  y="90"
+  width="200"
+  height="120"
+  preserveAspectRatio="xMidYMid meet"
+  filter="url(#glow)"
+/>
   </a>
 </svg>
