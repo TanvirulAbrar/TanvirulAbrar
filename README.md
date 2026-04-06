@@ -1,6 +1,8 @@
 
 ![Banner](./banner.svg)
-
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=tanvirul-abrar&label=Profile%20Views&color=00aaff&style=flat-square" />
+</p>
 # Hi, I'm Tanvirul Abrar <Tanvirul Abrar> 
   
 Web Developer | MERN Stack | Full-stack devloper | Problem solver
