@@ -5,7 +5,7 @@
 </p>
 
 
-# Hi, I'm Tanvirul Abrar <Tanvirul Abrar> 
+# <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3OGFzMnh5MHhtZXhtdnZxbXp4bHR2ZjZ0ZDMzcmN4bjBxdWlhd2liOSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/8m4gPv1UFz1jmiCtKd/giphy.gif" width ="35"> Hi, I'm Tanvirul Abrar <Tanvirul Abrar> 
   
 Web Developer | MERN Stack | Full-stack devloper | Problem solver
 
@@ -28,7 +28,7 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 
 ---
 
-##  What I Do
+## <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3OGFzMnh5MHhtZXhtdnZxbXp4bHR2ZjZ0ZDMzcmN4bjBxdWlhd2liOSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/8m4gPv1UFz1jmiCtKd/giphy.gif" width ="35"> What I Do
 
 - Build responsive and accessible web interfaces
 - Develop RESTful APIs
@@ -39,13 +39,13 @@ I’m a passionate web developer who enjoys building modern, responsive, and use
 
 ---
 
-##  Currently Activities
+## <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3OGFzMnh5MHhtZXhtdnZxbXp4bHR2ZjZ0ZDMzcmN4bjBxdWlhd2liOSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/8m4gPv1UFz1jmiCtKd/giphy.gif" width ="35"> Currently Activities
 - I’m working on a real estate websites.
 - exploring new tech
 
 ---
 
-##  Open To
+## <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3OGFzMnh5MHhtZXhtdnZxbXp4bHR2ZjZ0ZDMzcmN4bjBxdWlhd2liOSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/8m4gPv1UFz1jmiCtKd/giphy.gif" width ="35"> Open To
 
 - Internships
 - Junior Web Developer roles
